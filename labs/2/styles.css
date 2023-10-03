@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('https://i.pinimg.com/originals/bf/10/15/bf10152f807dc340605bd5a5dd2c75be.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-form-container,
+.authentication-form-container {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+textarea,
+select {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+header {
+    background-color: #333; /* Цвет фона заголовка */
+    height: 90px; /* Занимает всю высоту экрана */
+    width: 200px; /* Ширина заголовка */
+    position: fixed; /* Фиксированное положение */
+    top: 0; /* Закрепить сверху */
+    left: 0; /* Закрепить слева */
+    display: flex; /* Отображение дочерних элементов в виде строки */
+    flex-direction: column; /* Вертикальное расположение дочерних элементов */
+    align-items: center; /* Выравнивание по центру по вертикали */
+}
+
+nav ul {
+    list-style-type: none; /* Убираем стандартные маркеры списка */
+    padding: 0;
+}
+
+nav li {
+    margin-bottom: 20px; /* Отступ между элементами меню */
+}
+
+nav a {
+    text-decoration: none; /* Убираем подчеркивание ссылок */
+    color: #fff; /* Цвет текста ссылок */
+    font-weight: bold; /* Жирный текст */
+}
+
+nav a:hover {
+    color: #ff9900; /* Цвет текста ссылок при наведении */
+}
