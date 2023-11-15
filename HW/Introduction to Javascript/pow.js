@@ -1,12 +1,12 @@
 function pow(x, n) {
-  if (n < 0) {
-    return "Степень должна быть натуральным числом";
-  }
-  let result = 1;
-  for (let i = 0; i < n; i++) {
-    result *= x;
-  }
-  return result;
+    if (n < 0) {
+        return 'Степень должна быть натуральным числом';
+    }
+    let result = 1;
+    for (let i = 0; i < n; i++) {
+        result *= x;
+    }
+    return result;
 }
 
 // Пример использования:

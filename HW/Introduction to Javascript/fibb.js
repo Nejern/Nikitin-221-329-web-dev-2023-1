@@ -1,17 +1,17 @@
 function fibb(n) {
-  if (n < 0 || n > 1000) {
-    return "Некорректный ввод";
-  }
+    if (n < 0 || n > 1000) {
+        return 'Некорректный ввод';
+    }
 
-  const fib = new Array(n + 1);
-  fib[0] = 0;
-  fib[1] = 1;
+    const fib = new Array(n + 1);
+    fib[0] = 0;
+    fib[1] = 1;
 
-  for (let i = 2; i <= n; i++) {
-    fib[i] = fib[i - 1] + fib[i - 2];
-  }
+    for (let i = 2; i <= n; i++) {
+        fib[i] = fib[i - 1] + fib[i - 2];
+    }
 
-  return fib[n];
+    return fib[n];
 }
 
 // Пример использования:
