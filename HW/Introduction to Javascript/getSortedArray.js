@@ -1,13 +1,22 @@
 function getSortedArray(array, key) {
-    return array.slice().sort((a, b) => {
-        if (a[key] < b[key]) {
-            return -1;
-        } else if (a[key] > b[key]) {
-            return 1;
-        } else {
-            return 0;
+    const n = array.length;
+    let swapped;
+
+    do {
+        swapped = false;
+        for (let i = 0; i < n - 1; i++) {
+            if (array[i][key] > array[i + 1][key]) {
+                // Обмен значениями
+                const temp = array[i];
+                array[i] = array[i + 1];
+                array[i + 1] = temp;
+
+                swapped = true;
+            }
         }
-    });
+    } while (swapped);
+
+    return array;
 }
 
 // Пример работы функции.
