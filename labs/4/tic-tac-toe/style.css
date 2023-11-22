@@ -1,0 +1,50 @@
+#game {
+    width: 60vh;
+    height: 60vh;
+    margin: auto;
+    text-align: center;
+}
+
+#board {
+    width: 45vh;
+    height: 45vh;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cell {
+    height: 15vh;
+    width: 15vh;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    font-size: 9vh;
+    font-family: system-ui;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    margin-top: 15px;
+    background-color: #fff;
+    border: 2px solid #000;
+    font-size: 4vh;
+}
+
+.message {
+    border: 1px solid black;
+    max-width: 160px;
+    padding: 10px;
+    margin: 3px auto;
+}
+
+.error {
+    background-color: #c81e1e;
+    border-color: #620202;
+}
+
+.success {
+    background-color: #16cf01;
+    border-color: #014f08;
+}
