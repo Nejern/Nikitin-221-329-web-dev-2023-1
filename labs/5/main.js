@@ -99,8 +99,10 @@ function downloadData(page = 1) {
     const factsList = document.querySelector('.facts-list');
     const url = new URL(factsList.dataset.url);
     const perPage = document.querySelector('.per-page-btn').value;
+    const q = document.querySelector('.search-field').value;
     url.searchParams.append('page', page);
     url.searchParams.append('per-page', perPage);
+    url.searchParams.append('q', q);
     const xhr = new XMLHttpRequest();
     xhr.open('GET', url);
     xhr.responseType = 'json';
